@@ -11,7 +11,7 @@ export default function Home() {
     
     const formData = new FormData(e.target);
     // Add Web3Forms access key
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "cfdde8f0-0691-4ab1-8706-48973c6704f4");
     const data = Object.fromEntries(formData.entries());
     
     try {
