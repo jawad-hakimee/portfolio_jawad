@@ -1,14 +1,23 @@
 import './globals.css'
+import Navbar from '../components/Navbar'
 
 export const metadata = {
-  title: 'Modern Next.js App',
-  description: 'A beautiful one-page application built with Next.js',
+  title: 'Jawad Hakimi | Premium Portfolio',
+  description: 'Exceptional digital experiences.',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        
+        {children}
+
+        <footer className="footer container">
+          <p>&copy; {new Date().getFullYear()} Jawad Hakimi. Crafted with precision.</p>
+        </footer>
+      </body>
     </html>
   )
 }
