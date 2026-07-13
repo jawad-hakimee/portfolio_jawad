@@ -1,8 +1,8 @@
 export default function About() {
   const skills = [
-    'JavaScript', 'React', 'Tailwind CSS', 'Node.js', 'Express.js', 
-    'Laravel', 'PHP', 'Wordpress', 'SEO Optimization', 'Security Optimization', 
-    'Woocommerce', 'Next.js', 'RestAPI', 'JWT Auth', 'MySQL', 'Git', 
+    'JavaScript', 'React', 'Tailwind CSS', 'Node.js', 'Express.js',
+    'Laravel', 'PHP', 'Wordpress', 'SEO Optimization', 'Security Optimization',
+    'Woocommerce', 'Next.js', 'RestAPI', 'JWT Auth', 'MySQL', 'Git',
     'GitHub', 'Figma', 'SQL', 'NoSQL', 'Responsive Design', 'AWS'
   ];
 
@@ -19,7 +19,7 @@ export default function About() {
           </p>
         </div>
 
-        <h2 className="title-section text-center" style={{ fontSize: '1.75rem', marginBottom: '2rem' }}>Technical Arsenal</h2>
+        <h2 className="title-section text-center" style={{ fontSize: '1.75rem', marginBottom: '2rem' }}>Technical Skills</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {skills.map((skill, index) => (
             <div key={index} className="skill-tag">
