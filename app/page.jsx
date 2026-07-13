@@ -154,7 +154,7 @@ export default function Home() {
 
       {/* Skills Section */}
       <section id="skills" className="section-padding container">
-        <h2 className="section-title">Technical <span className="text-gradient">Arsenal</span></h2>
+        <h2 className="section-title">Technical <span className="text-gradient">Skills</span></h2>
         <div className="skills-container">
           {skills.map((skill, index) => (
             <div key={index} className="skill-item">
