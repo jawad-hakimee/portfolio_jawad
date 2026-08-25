@@ -1,20 +1,5 @@
 import './globals.css'
 import Navbar from '../components/Navbar'
-import { Outfit, Space_Grotesk } from 'next/font/google'
-
-const outfit = Outfit({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-outfit',
-  weight: ['300', '400', '500', '600', '700', '800']
-})
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-space-grotesk',
-  weight: ['500', '700']
-})
 
 export const metadata = {
   metadataBase: new URL('https://jawadhakimi.com'),
@@ -61,7 +46,7 @@ export const metadata = {
     siteName: 'Jawad Hakimi Portfolio',
     images: [
       {
-        url: '/icon.svg',
+        url: '/favicon.svg',
         width: 800,
         height: 800,
         alt: 'Jawad Hakimi - Full-Stack Developer'
@@ -74,15 +59,8 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Jawad Hakimi | Full-Stack & WordPress Developer',
     description: 'Full-Stack & WordPress Developer building fast, secure, and modern web applications.',
-    images: ['/icon.svg'],
+    images: ['/favicon.svg'],
     creator: '@jawad_hakimi'
-  },
-  icons: {
-    icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
-      { url: '/favicon.svg', type: 'image/svg+xml' }
-    ],
-    apple: '/icon.svg'
   }
 }
 
@@ -117,8 +95,10 @@ export default function RootLayout({ children }) {
   }
 
   return (
-    <html lang="en" className={`${outfit.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

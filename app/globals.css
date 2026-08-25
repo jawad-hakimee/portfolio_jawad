@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  font-family: var(--font-outfit), 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Outfit', 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-primary);
   line-height: 1.8;
@@ -41,7 +41,7 @@ body {
 
 /* Headings use Space Grotesk for a techy, premium vibe */
 h1, h2, h3, h4, h5, h6, .logo {
-  font-family: var(--font-space-grotesk), 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Syne', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 /* Hardware-Accelerated Ambient Light */
