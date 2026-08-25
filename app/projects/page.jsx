@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Selected Works & Projects',
+  description: 'Explore full-stack applications, enterprise platforms, e-commerce storefronts, and WordPress websites developed by Jawad Hakimi.',
+}
+
 export default function Projects() {
   const projects = [
     {
@@ -9,6 +14,16 @@ export default function Projects() {
       title: 'Edvora Tech',
       desc: 'A comprehensive platform solution requiring complex state management and seamless user interactions.',
       tags: ['React', 'Node.js', 'Express']
+    },
+    {
+      title: 'ACA Global Reach',
+      desc: 'Delivering mission-critical supplies, equipment, and global logistics solutions for government and institutional operations.',
+      tags: ['Next.js', 'React', 'Procurement', 'Logistics']
+    },
+    {
+      title: 'Saya Management System',
+      desc: 'A powerful enterprise management system designed for streamlining workflow, data tracking, and operations management.',
+      tags: ['Laravel', 'React', 'MySQL', 'Management']
     },
     {
       title: 'Alone Hijab',

@@ -45,12 +45,55 @@ export default function Home() {
     'GitHub', 'Figma', 'SQL', 'NoSQL', 'Responsive Design', 'AWS'
   ];
 
+  const experiences = [
+    {
+      role: "MERN Full-Stack Developer",
+      company: "Sheen Agency",
+      location: "Remote",
+      period: "Sep 2025 - Present",
+      isCurrent: true,
+      points: [
+        "Build and maintain responsive web applications using React, Next.js, Node.js, Express.js, and MongoDB.",
+        "Develop scalable interfaces, backend services, RESTful APIs, and optimized database structures based on project requirements.",
+        "Integrate APIs, troubleshoot technical bottlenecks, and collaborate across teams to enhance system capabilities.",
+        "Design and maintain MongoDB collections while supporting cloud deployment and ongoing maintenance."
+      ],
+      skills: ["React", "Next.js", "Node.js", "Express.js", "MongoDB", "REST APIs"]
+    },
+    {
+      role: "WordPress & Full-Stack Developer",
+      company: "Abdal Azami Ltd.",
+      location: "Kabul, Afghanistan",
+      period: "Mar 2026 - Aug 2026",
+      isCurrent: false,
+      points: [
+        "Managed and improved company websites through WordPress customization and full-stack development.",
+        "Customized themes and features, resolved technical issues, and improved responsiveness, usability, and speed.",
+        "Administered the company's management system, including product updates, data entry, record removal, user management, and daily operations."
+      ],
+      skills: ["WordPress", "PHP", "Full-Stack Dev", "SEO", "System Administration"]
+    },
+    {
+      role: "Full-Stack Developer",
+      company: "Galaxy Technology",
+      location: "Remote",
+      period: "Jan 2026 - Apr 2026",
+      isCurrent: false,
+      points: [
+        "Developed web applications and management-system features using PHP, Laravel, and SQL databases.",
+        "Built backend functionality and database structures while supporting troubleshooting and performance improvements.",
+        "Collaborated with team members to implement new features and ensure smooth, reliable system operation."
+      ],
+      skills: ["PHP", "Laravel", "SQL", "Database Design", "REST APIs"]
+    }
+  ];
+
   const projects = [
     {
         title: "Abdal Azami Official",
         desc: "Abdal Azami Official Website offers elegant, high-quality Skechers Shoes designed for comfort, and everyday wear.",
         tags: ["Wordpress", "Woocommerce", "SEO", "Security"],
-        image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1200&auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&auto=format&fit=crop&q=75",
         githubLink: "https://abdashoes.com/",
         liveLink: "https://abdashoes.com/"
     },
@@ -58,9 +101,25 @@ export default function Home() {
         title: "Edvora Tech",
         desc: "Empowering students with flexible online learning, expert guidance, and interactive educational resources.",
         tags: ["Laravel", "PHP", "MySQL", "REST API", "JWT"],
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=75",
         githubLink: "https://edvoratech.com/",
         liveLink: "https://edvoratech.com/"
+    },
+    {
+        title: "ACA Global Reach",
+        desc: "Delivering mission-critical supplies, equipment, and global logistics solutions for government and institutional operations.",
+        tags: ["Next.js", "React", "Logistics", "Procurement"],
+        image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&auto=format&fit=crop&q=75",
+        githubLink: "https://github.com/jawad-hakimee/aca_website",
+        liveLink: "https://acaglobalreach.com/"
+    },
+    {
+        title: "Saya Management System",
+        desc: "A powerful enterprise management system designed for streamlining workflow, data tracking, and operations management.",
+        tags: ["Laravel", "React", "MySQL", "Management"],
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=75",
+        githubLink: "https://github.com/jawad-hakimee/saya-management-system",
+        liveLink: "https://saya.jawadhakimi.com"
     },
     {
         title: "Alone Hijab",
@@ -71,18 +130,10 @@ export default function Home() {
         liveLink: "https://alone-hijab-scon.vercel.app/"
     },
     {
-        title: "ACA US",
-        desc: "ACA US provides procurement, supply chain, and logistics services for the U.S. government and its agencies.",
-        tags: ["Next.js", "React", "Procurement"],
-        image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=720&h=500&fit=crop&q=80",
-        githubLink: "#",
-        liveLink: "https://aca-website-kcrs.vercel.app/"
-    },
-    {
         title: "CodeWeekend Members",
         desc: "Community Members is a platform that helps members connect with each other and share their experiences.",
         tags: ["JavaScript", "Next.js", "Tailwind"],
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format&fit=crop&q=75",
         liveLink: "https://code-weekend-community-members-2023.netlify.app/"
     },
     {
@@ -97,16 +148,15 @@ export default function Home() {
         title: "JK Online Store",
         desc: "Provides convenient online shopping with quality products, secure transactions, and reliable customer service.",
         tags: ["React", "Tailwind"],
-        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1974&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=75",
         githubLink: "#",
         liveLink: "https://jk-online-store.netlify.app/"
     },
-
     {
         title: "Coming Soon",
         desc: "New exciting projects are on the way. Stay tuned!",
         tags: ["Future"],
-        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop&q=75",
         githubLink: "#",
         liveLink: "#"
     }
@@ -129,7 +179,7 @@ export default function Home() {
             I craft exceptionally fast, highly secure, and perfectly accessible digital experiences. 
             Transforming your ideas into premium web products.
           </p>
-          <div className="flex gap-4">
+          <div className="hero-actions">
             <a href="#projects" className="btn-primary">See My Work</a>
             <a href="#contact" className="btn-secondary">Get In Touch</a>
           </div>
@@ -164,6 +214,49 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Work Experience Section */}
+      <section id="experience" className="section-padding container">
+        <h2 className="section-title">Work <span className="text-gradient">Experience</span></h2>
+        <div className="experience-timeline">
+          {experiences.map((exp, index) => (
+            <div key={index} className="experience-card">
+              <div className="experience-card-header">
+                <div>
+                  <h3 className="experience-role-title">{exp.role}</h3>
+                  <div className="experience-company-row">
+                    <span>{exp.company}</span>
+                    <span style={{ color: 'var(--border-color)' }}>•</span>
+                    <span style={{ color: 'var(--text-secondary)', fontWeight: 500 }}>{exp.location}</span>
+                  </div>
+                </div>
+                <span className={`experience-period-badge ${exp.isCurrent ? 'current' : ''}`}>
+                  {exp.isCurrent && (
+                    <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#22c55e', display: 'inline-block' }}></span>
+                  )}
+                  {exp.period}
+                </span>
+              </div>
+
+              <ul className="experience-list">
+                {exp.points.map((point, pIdx) => (
+                  <li key={pIdx} className="experience-list-item">
+                    {point}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="experience-skills-row">
+                {exp.skills.map((skill, sIdx) => (
+                  <span key={sIdx} className="tag" style={{ fontSize: '0.75rem', padding: '0.3rem 0.85rem' }}>
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="section-padding container">
         <h2 className="section-title">Featured <span className="text-gradient">Projects</span></h2>
@@ -176,7 +269,15 @@ export default function Home() {
               style={{ cursor: 'pointer' }}
             >
               <div className="project-image-container">
-                <img src={project.image} alt={project.title} className="project-image" />
+                <img 
+                  src={project.image} 
+                  alt={`${project.title} - Project by Jawad Hakimi`} 
+                  className="project-image"
+                  loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="340"
+                />
                 <div className="project-links">
                   {project.githubLink && project.githubLink !== '#' && (
                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link-btn" title="View Source" onClick={(e) => e.stopPropagation()}>

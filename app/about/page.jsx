@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'About Me',
+  description: 'Learn more about Jawad Hakimi, a Full-Stack & WordPress Developer specializing in high-performance web applications and systems.',
+}
+
 export default function About() {
   const skills = [
     'JavaScript', 'React', 'Tailwind CSS', 'Node.js', 'Express.js',

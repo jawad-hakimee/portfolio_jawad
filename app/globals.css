@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
-
 :root {
   --bg-color: #f8fafc;
   --bg-card: rgba(255, 255, 255, 0.7);
@@ -21,7 +19,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 17px; /* Bumping base font size up for readability */
+  font-size: 17px;
 }
 
 * {
@@ -31,31 +29,35 @@ html {
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-outfit), 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-primary);
   line-height: 1.8;
   overflow-x: hidden;
   position: relative;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /* Headings use Space Grotesk for a techy, premium vibe */
 h1, h2, h3, h4, h5, h6, .logo {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-space-grotesk), 'Space Grotesk', sans-serif;
 }
 
-/* Background Gradients */
+/* Hardware-Accelerated Ambient Light */
 body::before, body::after {
   content: '';
   position: absolute;
-  width: 70vw;
-  height: 70vh;
+  width: 60vw;
+  height: 60vh;
   border-radius: 50%;
-  filter: blur(140px);
+  filter: blur(100px);
   z-index: -1;
-  opacity: 0.5;
-  animation: float 25s infinite alternate ease-in-out;
+  opacity: 0.45;
+  pointer-events: none;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  animation: float 28s infinite alternate ease-in-out;
 }
 
 body::before {
@@ -597,42 +599,310 @@ body::after {
   font-weight: 500;
 }
 
+/* Top Fixed Logo */
+.top-logo-container {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.top-logo-container:hover {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow-sm);
+}
+
+.top-logo-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: #1e293b;
+  letter-spacing: -0.5px;
+}
+
+/* Hero Actions */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Hero Badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Experience Section Styles */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.experience-card {
+  position: relative;
+  background: var(--bg-card);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border-color);
+  border-radius: 1.75rem;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+.experience-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-role-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+  word-break: break-word;
+}
+
+.experience-company-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  font-size: 1.05rem;
+  color: var(--accent-1);
+  font-weight: 600;
+}
+
+.experience-period-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  color: var(--accent-1);
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+  white-space: nowrap;
+}
+
+.experience-period-badge.current {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.3);
+  color: #16a34a;
+}
+
+.experience-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+
+.experience-list-item {
+  position: relative;
+  padding-left: 1.75rem;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.experience-list-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}
+
+.experience-skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Comprehensive Responsive Media Queries */
 @media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+  html, body {
+    overflow-x: hidden;
   }
   
+  .container {
+    padding: 0 1.25rem !important;
+  }
+
+  .top-logo-container {
+    top: 0.85rem;
+    left: 0.85rem;
+    padding: 0.3rem 0.75rem;
+  }
+  
+  .top-logo-svg {
+    width: 34px;
+    height: 34px;
+  }
+  
+  .top-logo-text {
+    font-size: 1.15rem;
+  }
+
+  .hero-section {
+    padding-top: 6.75rem !important;
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .hero-badge {
+    margin-top: 0.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.82rem;
+    padding: 0.4rem 1rem;
+  }
+
   .hero-title {
-    font-size: clamp(2.5rem, 10vw, 4rem);
+    font-size: clamp(2.3rem, 9.5vw, 3.8rem);
+    margin-bottom: 1.25rem;
   }
   
   .hero-subtitle {
-    font-size: 1.15rem;
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
+    font-size: 1.05rem;
     margin-bottom: 2rem;
+    line-height: 1.6;
   }
   
-  /* Override padding for glass cards on mobile */
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
+  }
+  
   .glass-card {
     padding: 1.5rem !important;
-    border-radius: 1.5rem !important;
+    border-radius: 1.25rem !important;
   }
   
   .section-padding {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-  
-  .jh-logo-container {
-    width: 46px;
-    height: 46px;
+
+  .skills-container {
+    gap: 0.65rem;
   }
-  .jh-logo-inner {
-    width: 40px;
-    height: 40px;
-    font-size: 1.1rem;
+  
+  .skill-item {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.92rem;
+  }
+
+  .experience-card {
+    padding: 1.5rem 1.25rem;
+    border-radius: 1.25rem;
+  }
+  
+  .experience-role-title {
+    font-size: 1.25rem;
+  }
+  
+  .experience-company-row {
+    font-size: 0.95rem;
+  }
+  
+  .experience-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+  
+  .experience-list-item {
+    font-size: 0.95rem;
+    padding-left: 1.35rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+  }
+
+  .floating-dock {
+    bottom: 1rem;
+    padding: 0.4rem 0.65rem;
+    gap: 0.35rem;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    max-width: calc(100vw - 1.5rem);
+  }
+  
+  .dock-item {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .dock-item svg {
+    width: 19px;
+    height: 19px;
   }
 }
+
+
