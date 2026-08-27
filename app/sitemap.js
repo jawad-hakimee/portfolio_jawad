@@ -17,6 +17,12 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
+    },
+    {
+      url: 'https://jawadhakimi.com/cv',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
     }
   ]
 }

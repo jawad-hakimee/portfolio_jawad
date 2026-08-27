@@ -1,0 +1,480 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+    >>
+  >>
+>>
+endobj
+4 0 obj
+<<
+  /Length 4720
+>>
+stream
+q
+% Top Header Bar
+0.07 0.12 0.22 rg
+0 745 595.28 96.89 re f
+
+% Top Bar Text
+1 1 1 rg
+BT
+/F2 20 Tf
+30 795 Td
+(JAWAD HAKIMI) Tj
+ET
+
+BT
+/F2 10 Tf
+30 778 Td
+(FULL-STACK DEVELOPER) Tj
+ET
+
+BT
+/F1 8.5 Tf
+30 762 Td
+(Kabul, Afghanistan  |  +93 770 127 606  |  info@jawadhakimi.com) Tj
+ET
+
+BT
+/F1 8.5 Tf
+30 750 Td
+(jawadhakimi.com  |  github.com/jawad-hakimee) Tj
+ET
+
+% Column Divider
+0.88 0.90 0.94 RG
+1 w
+195 40 m 195 725 l S
+
+% LEFT COLUMN
+% Section: CORE SKILLS
+0.14 0.38 0.92 rg
+BT
+/F2 11 Tf
+30 715 Td
+(CORE SKILLS) Tj
+ET
+0.14 0.38 0.92 RG
+1.5 w
+30 710 m 180 710 l S
+
+0.1 0.1 0.1 rg
+BT
+/F2 8.5 Tf
+30 695 Td
+(Frontend) Tj
+ET
+BT
+/F1 8 Tf
+30 682 Td
+(\225 HTML5, CSS3, JavaScript) Tj
+30 670 Td
+(\225 React, Next.js) Tj
+30 658 Td
+(\225 Tailwind CSS) Tj
+30 646 Td
+(\225 Responsive Web Design) Tj
+ET
+
+BT
+/F2 8.5 Tf
+30 628 Td
+(Backend) Tj
+ET
+BT
+/F1 8 Tf
+30 615 Td
+(\225 Node.js, Express.js) Tj
+30 603 Td
+(\225 PHP, Laravel \(basic\)) Tj
+30 591 Td
+(\225 REST API Integration) Tj
+ET
+
+BT
+/F2 8.5 Tf
+30 573 Td
+(Data & Platforms) Tj
+ET
+BT
+/F1 8 Tf
+30 560 Td
+(\225 MongoDB, SQL, SQL Server) Tj
+30 548 Td
+(\225 WordPress, WooCommerce) Tj
+30 536 Td
+(\225 Git, GitHub, Vercel, Hostinger) Tj
+ET
+
+% Section: EDUCATION
+0.14 0.38 0.92 rg
+BT
+/F2 11 Tf
+30 508 Td
+(EDUCATION) Tj
+ET
+0.14 0.38 0.92 RG
+1.5 w
+30 503 m 180 503 l S
+
+0.1 0.1 0.1 rg
+BT
+/F2 8.5 Tf
+30 488 Td
+(Full-Stack Development) Tj
+ET
+BT
+/F1 7.5 Tf
+30 476 Td
+(CodeWeekend Community) Tj
+ET
+0.35 0.4 0.5 rg
+BT
+/F1 7.5 Tf
+30 465 Td
+(Oct 2023 - Oct 2024) Tj
+ET
+
+0.1 0.1 0.1 rg
+BT
+/F2 8.5 Tf
+30 447 Td
+(Bachelor's Degree) Tj
+ET
+BT
+/F1 7.5 Tf
+30 435 Td
+(Kateb University) Tj
+ET
+0.35 0.4 0.5 rg
+BT
+/F1 7.5 Tf
+30 424 Td
+(Mar 2023 - Present) Tj
+ET
+
+0.1 0.1 0.1 rg
+BT
+/F2 8.5 Tf
+30 406 Td
+(High School Diploma) Tj
+ET
+BT
+/F1 7.5 Tf
+30 394 Td
+(Istiqlal High School) Tj
+ET
+0.35 0.4 0.5 rg
+BT
+/F1 7.5 Tf
+30 383 Td
+(Completed Dec 2022) Tj
+ET
+
+% Section: LANGUAGES
+0.14 0.38 0.92 rg
+BT
+/F2 11 Tf
+30 355 Td
+(LANGUAGES) Tj
+ET
+0.14 0.38 0.92 RG
+1.5 w
+30 350 m 180 350 l S
+
+0.1 0.1 0.1 rg
+BT
+/F1 8 Tf
+30 335 Td
+(\225 Dari: Native) Tj
+30 322 Td
+(\225 Pashto: Proficient \(C2\)) Tj
+30 309 Td
+(\225 English: Upper-Intermediate \(B2\)) Tj
+ET
+
+% Section: STRENGTHS
+0.14 0.38 0.92 rg
+BT
+/F2 11 Tf
+30 280 Td
+(STRENGTHS) Tj
+ET
+0.14 0.38 0.92 RG
+1.5 w
+30 275 m 180 275 l S
+
+0.1 0.1 0.1 rg
+BT
+/F1 8 Tf
+30 260 Td
+(\225 Problem-solving) Tj
+30 248 Td
+(\225 Team collaboration) Tj
+30 236 Td
+(\225 Team leadership) Tj
+30 224 Td
+(\225 Time management) Tj
+30 212 Td
+(\225 Remote work discipline) Tj
+ET
+
+% RIGHT COLUMN
+% Section: PROFESSIONAL PROFILE
+0.14 0.38 0.92 rg
+BT
+/F2 11 Tf
+210 715 Td
+(PROFESSIONAL PROFILE) Tj
+ET
+0.14 0.38 0.92 RG
+1.5 w
+210 710 m 565 710 l S
+
+0.2 0.25 0.3 rg
+BT
+/F1 8 Tf
+210 695 Td
+(Full-Stack Developer with hands-on experience building and maintaining responsive websites) Tj
+210 684 Td
+(and web applications using React, Next.js, Node.js, Express.js, MongoDB, WordPress, PHP,) Tj
+210 673 Td
+(and Laravel. Skilled in API integration, database management, troubleshooting, deployment,) Tj
+210 662 Td
+(and performance optimization. Comfortable translating business requirements into reliable,) Tj
+210 651 Td
+(user-friendly digital products in both office and remote environments.) Tj
+ET
+
+% Section: PROFESSIONAL EXPERIENCE
+0.14 0.38 0.92 rg
+BT
+/F2 11 Tf
+210 630 Td
+(PROFESSIONAL EXPERIENCE) Tj
+ET
+0.14 0.38 0.92 RG
+1.5 w
+210 625 m 565 625 l S
+
+% Job 1: Abdal Azami Ltd.
+0.1 0.1 0.1 rg
+BT
+/F2 9 Tf
+210 610 Td
+(WordPress & Full-Stack Developer) Tj
+ET
+0.35 0.4 0.5 rg
+BT
+/F1 8 Tf
+210 598 Td
+(Abdal Azami Ltd.  |  Kabul, Afghanistan  |  Mar 2026 - Aug 2026) Tj
+ET
+0.2 0.25 0.3 rg
+BT
+/F1 7.5 Tf
+215 586 Td
+(\225 Manage and improve company websites through WordPress customization and frontend/backend dev.) Tj
+215 575 Td
+(\225 Customize themes and features, resolve technical issues, and improve responsiveness and speed.) Tj
+215 564 Td
+(\225 Administer management systems: product updates, data entry, user roles, and daily operations.) Tj
+ET
+
+% Job 2: Sheen Agency
+0.1 0.1 0.1 rg
+BT
+/F2 9 Tf
+210 545 Td
+(MERN Full-Stack Developer) Tj
+ET
+0.35 0.4 0.5 rg
+BT
+/F1 8 Tf
+210 533 Td
+(Sheen Agency  |  Remote  |  Sep 2025 - Present) Tj
+ET
+0.2 0.25 0.3 rg
+BT
+/F1 7.5 Tf
+215 521 Td
+(\225 Build and maintain web applications using React, Next.js, Node.js, Express.js, and MongoDB.) Tj
+215 510 Td
+(\225 Develop responsive interfaces, scalable backend services, REST APIs, and database structures.) Tj
+215 499 Td
+(\225 Integrate APIs, troubleshoot defects, and collaborate across teams to enhance capabilities.) Tj
+215 488 Td
+(\225 Design and maintain MongoDB collections and support cloud deployment and maintenance.) Tj
+ET
+
+% Job 3: Galaxy Technology
+0.1 0.1 0.1 rg
+BT
+/F2 9 Tf
+210 469 Td
+(Full-Stack Developer) Tj
+ET
+0.35 0.4 0.5 rg
+BT
+/F1 8 Tf
+210 457 Td
+(Galaxy Technology  |  Remote  |  Jan 2026 - Apr 2026) Tj
+ET
+0.2 0.25 0.3 rg
+BT
+/F1 7.5 Tf
+215 445 Td
+(\225 Developed web applications and management-system features using PHP, Laravel, and SQL.) Tj
+215 434 Td
+(\225 Built backend functionality and database structures while supporting troubleshooting and fixes.) Tj
+215 423 Td
+(\225 Collaborated with team members to implement features and maintain smooth system operation.) Tj
+ET
+
+% Section: SELECTED PROJECTS
+0.14 0.38 0.92 rg
+BT
+/F2 11 Tf
+210 402 Td
+(SELECTED PROJECTS) Tj
+ET
+0.14 0.38 0.92 RG
+1.5 w
+210 397 m 565 397 l S
+
+% Project 1: Portfolio
+0.1 0.1 0.1 rg
+BT
+/F2 8.5 Tf
+210 382 Td
+(Portfolio Website  |  Next.js  |  jawadhakimi.com) Tj
+ET
+0.2 0.25 0.3 rg
+BT
+/F1 7.5 Tf
+210 371 Td
+(Official developer portfolio presenting projects, technical skills, services, and live demos.) Tj
+ET
+
+% Project 2: Abdal Azami
+0.1 0.1 0.1 rg
+BT
+/F2 8.5 Tf
+210 353 Td
+(Abdal Azami Official Website  |  WordPress, PHP  |  abdashoes.com) Tj
+ET
+0.2 0.25 0.3 rg
+BT
+/F1 7.5 Tf
+210 342 Td
+(Maintained retail eCommerce platform with custom theme modifications and performance optimization.) Tj
+ET
+
+% Project 3: EdvoraTech
+0.1 0.1 0.1 rg
+BT
+/F2 8.5 Tf
+210 324 Td
+(EdvoraTech  |  Education Platform  |  edvoratech.com) Tj
+ET
+0.2 0.25 0.3 rg
+BT
+/F1 7.5 Tf
+210 313 Td
+(Built responsive platform featuring courses, teacher/student portals, events, and roadmaps.) Tj
+ET
+
+% Project 4: ACA US Procurement
+0.1 0.1 0.1 rg
+BT
+/F2 8.5 Tf
+210 295 Td
+(ACA US Procurement Website  |  Next.js  |  acaglobalreach.com) Tj
+ET
+0.2 0.25 0.3 rg
+BT
+/F1 7.5 Tf
+210 284 Td
+(Corporate procurement website with reusable React components, mobile nav, and past performance.) Tj
+ET
+
+% Project 5: Alone Hijab
+0.1 0.1 0.1 rg
+BT
+/F2 8.5 Tf
+210 266 Td
+(Alone Hijab Web Interface  |  Next.js, React  |  alone-hijab-scon.vercel.app) Tj
+ET
+0.2 0.25 0.3 rg
+BT
+/F1 7.5 Tf
+210 255 Td
+(Modern fashion storefront with category layouts, responsive hero sections, and UI components.) Tj
+ET
+
+% Bottom Footer Bar
+0.07 0.12 0.22 rg
+0 0 595.28 25 re f
+
+1 1 1 rg
+BT
+/F2 8 Tf
+120 9 Td
+(MORE PROJECTS & CODE  |  jawadhakimi.com  |  info@jawadhakimi.com) Tj
+ET
+
+Q
+endstream
+endobj
+5 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+6 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica-Bold
+>>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000262 00000 n 
+0000005050 00000 n 
+0000005117 00000 n 
+trailer
+<<
+  /Size 7
+  /Root 1 0 R
+>>
+startxref
+5189
+%%EOF

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 
 export default function Home() {
   const [formStatus, setFormStatus] = useState('idle');
+  const [isCvOpen, setIsCvOpen] = useState(false);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -181,6 +182,31 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a href="#projects" className="btn-primary">See My Work</a>
+            <a 
+              href="/Jawad_Hakimi_CV.pdf" 
+              download="Jawad_Hakimi_CV.pdf" 
+              className="btn-primary" 
+              style={{ background: 'linear-gradient(135deg, var(--accent-1), var(--accent-2))', boxShadow: '0 10px 20px rgba(37, 99, 235, 0.25)' }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '4px' }}>
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download CV
+            </a>
+            <button 
+              type="button" 
+              onClick={() => setIsCvOpen(true)} 
+              className="btn-secondary"
+              style={{ cursor: 'pointer' }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '4px' }}>
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              View CV
+            </button>
             <a href="#contact" className="btn-secondary">Get In Touch</a>
           </div>
         </div>
@@ -196,9 +222,47 @@ export default function Home() {
           <p style={{ fontSize: '1.15rem', color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
             Skilled in Node.js, Express.js, MongoDB, Laravel, PHP, MySQL, JavaScript, React.js, Next.js, and WordPress.
           </p>
-          <p style={{ fontSize: '1.15rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
+          <p style={{ fontSize: '1.15rem', color: 'var(--text-secondary)', lineHeight: '1.8', marginBottom: '2rem' }}>
             Experienced in building scalable, responsive, and user-friendly solutions, from custom business applications to eCommerce platforms, with a strong focus on performance, functionality, and client satisfaction.
           </p>
+          
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', paddingTop: '1.5rem', borderTop: '1px solid var(--border-color)', alignItems: 'center' }}>
+            <a 
+              href="/Jawad_Hakimi_CV.pdf" 
+              download="Jawad_Hakimi_CV.pdf" 
+              className="cv-action-btn primary"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download CV (PDF)
+            </a>
+            <button 
+              type="button" 
+              onClick={() => setIsCvOpen(true)} 
+              className="cv-action-btn secondary"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              Preview CV Online
+            </button>
+            <a 
+              href="/cv" 
+              className="cv-action-btn secondary"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              Open Full Page CV
+            </a>
+          </div>
         </div>
       </section>
 
@@ -420,6 +484,267 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* CV Quick View Modal */}
+      {isCvOpen && (
+        <div className="cv-modal-backdrop" onClick={() => setIsCvOpen(false)}>
+          <div className="cv-modal-window" onClick={(e) => e.stopPropagation()}>
+            <div className="cv-modal-header">
+              <div className="cv-modal-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--accent-1)' }}>
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                Jawad Hakimi — Curriculum Vitae
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                <a 
+                  href="/Jawad_Hakimi_CV.pdf" 
+                  download="Jawad_Hakimi_CV.pdf" 
+                  className="cv-action-btn primary"
+                  style={{ padding: '0.5rem 1.25rem', fontSize: '0.88rem' }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download PDF
+                </a>
+                <a 
+                  href="/cv" 
+                  target="_blank"
+                  className="cv-action-btn secondary"
+                  style={{ padding: '0.5rem 1rem', fontSize: '0.88rem' }}
+                >
+                  Full Page ↗
+                </a>
+                <button 
+                  onClick={() => setIsCvOpen(false)} 
+                  className="cv-modal-close-btn"
+                  aria-label="Close CV Modal"
+                >
+                  &times;
+                </button>
+              </div>
+            </div>
+
+            <div className="cv-modal-body">
+              <div className="cv-document" style={{ boxShadow: 'none' }}>
+                
+                {/* Header Banner */}
+                <header className="cv-header">
+                  <div className="cv-header-content">
+                    <h1 className="cv-name">JAWAD HAKIMI</h1>
+                    <p className="cv-headline">FULL-STACK DEVELOPER</p>
+                    <div className="cv-contact-row">
+                      <span>Kabul, Afghanistan</span>
+                      <span className="separator">•</span>
+                      <a href="tel:+93770127606">+93 770 127 606</a>
+                      <span className="separator">•</span>
+                      <a href="mailto:info@jawadhakimi.com">info@jawadhakimi.com</a>
+                    </div>
+                    <div className="cv-links-row">
+                      <a href="https://jawadhakimi.com" target="_blank" rel="noreferrer">jawadhakimi.com</a>
+                      <span className="separator">•</span>
+                      <a href="https://github.com/jawad-hakimee" target="_blank" rel="noreferrer">github.com/jawad-hakimee</a>
+                    </div>
+                  </div>
+                </header>
+
+                {/* Body 2 Columns */}
+                <div className="cv-body-grid">
+                  
+                  {/* Left Column */}
+                  <aside className="cv-left-col">
+                    <section className="cv-section">
+                      <h2 className="cv-section-title">CORE SKILLS</h2>
+                      
+                      <div className="cv-skill-group">
+                        <h3 className="cv-skill-heading">Frontend</h3>
+                        <ul className="cv-bullet-list">
+                          <li>HTML5, CSS, JavaScript</li>
+                          <li>React, Next.js</li>
+                          <li>Tailwind CSS</li>
+                          <li>Responsive Web Design</li>
+                        </ul>
+                      </div>
+
+                      <div className="cv-skill-group">
+                        <h3 className="cv-skill-heading">Backend</h3>
+                        <ul className="cv-bullet-list">
+                          <li>Node.js, Express.js</li>
+                          <li>PHP, Laravel (basic)</li>
+                          <li>REST API integration</li>
+                        </ul>
+                      </div>
+
+                      <div className="cv-skill-group">
+                        <h3 className="cv-skill-heading">Data & Platforms</h3>
+                        <ul className="cv-bullet-list">
+                          <li>MongoDB, SQL, SQL Server</li>
+                          <li>WordPress</li>
+                          <li>Git, GitHub, Vercel, Hostinger</li>
+                        </ul>
+                      </div>
+                    </section>
+
+                    <section className="cv-section">
+                      <h2 className="cv-section-title">EDUCATION</h2>
+                      
+                      <div className="cv-edu-item">
+                        <h3 className="cv-item-title">Full-Stack Development</h3>
+                        <p className="cv-institution">CodeWeekend Community</p>
+                        <p className="cv-date">Oct 2023 - Oct 2024</p>
+                      </div>
+
+                      <div className="cv-edu-item">
+                        <h3 className="cv-item-title">Bachelor's Degree</h3>
+                        <p className="cv-institution">Kateb University</p>
+                        <p className="cv-date">Mar 2023 - Present</p>
+                      </div>
+
+                      <div className="cv-edu-item">
+                        <h3 className="cv-item-title">High School Diploma</h3>
+                        <p className="cv-institution">Istiqlal High School</p>
+                        <p className="cv-date">Completed Dec 2022</p>
+                      </div>
+                    </section>
+
+                    <section className="cv-section">
+                      <h2 className="cv-section-title">LANGUAGES</h2>
+                      <ul className="cv-bullet-list">
+                        <li><strong>Dari:</strong> Native</li>
+                        <li><strong>Pashto:</strong> Proficient (C2)</li>
+                        <li><strong>English:</strong> Upper-Intermediate (B2)</li>
+                      </ul>
+                    </section>
+
+                    <section className="cv-section">
+                      <h2 className="cv-section-title">STRENGTHS</h2>
+                      <ul className="cv-bullet-list">
+                        <li>Problem-solving</li>
+                        <li>Team collaboration</li>
+                        <li>Team leadership</li>
+                        <li>Time management</li>
+                        <li>Remote work discipline</li>
+                      </ul>
+                    </section>
+                  </aside>
+
+                  {/* Right Column */}
+                  <div className="cv-right-col">
+                    <section className="cv-section">
+                      <h2 className="cv-section-title">PROFESSIONAL PROFILE</h2>
+                      <p className="cv-profile-text">
+                        Full-Stack Developer with hands-on experience building and maintaining responsive websites and web applications using React, Next.js, Node.js, Express.js, MongoDB, WordPress, PHP, and Laravel. Skilled in API integration, database management, troubleshooting, deployment, and performance optimization. Comfortable translating business requirements into reliable, user-friendly digital products in both office and remote environments.
+                      </p>
+                    </section>
+
+                    <section className="cv-section">
+                      <h2 className="cv-section-title">PROFESSIONAL EXPERIENCE</h2>
+                      
+                      <div className="cv-job-item">
+                        <div className="cv-job-header">
+                          <h3 className="cv-job-title">WordPress & Full-Stack Developer</h3>
+                          <span className="cv-job-meta">Abdal Azami Ltd. | Kabul, Afghanistan | Mar 2026 - Aug 2026</span>
+                        </div>
+                        <ul className="cv-bullet-list">
+                          <li>Manage and improve company websites through WordPress customization and frontend/backend development.</li>
+                          <li>Customize themes and features, resolve technical issues, and improve responsiveness, usability, and performance.</li>
+                          <li>Administer the company’s management system, including product updates, data entry, record removal, user management, and daily system operations.</li>
+                        </ul>
+                      </div>
+
+                      <div className="cv-job-item">
+                        <div className="cv-job-header">
+                          <h3 className="cv-job-title">MERN Full-Stack Developer</h3>
+                          <span className="cv-job-meta">Sheen Agency | Remote | Sep 2025 - Present</span>
+                        </div>
+                        <ul className="cv-bullet-list">
+                          <li>Build and maintain web applications using React, Next.js, Node.js, Express.js, and MongoDB.</li>
+                          <li>Develop responsive interfaces, backend services, APIs, and database structures based on project requirements.</li>
+                          <li>Integrate APIs, troubleshoot defects, and collaborate with team members to improve application functionality.</li>
+                          <li>Design and maintain MongoDB collections and support application deployment and ongoing maintenance.</li>
+                        </ul>
+                      </div>
+
+                      <div className="cv-job-item">
+                        <div className="cv-job-header">
+                          <h3 className="cv-job-title">Full-Stack Developer</h3>
+                          <span className="cv-job-meta">Galaxy Technology | Remote | Jan 2026 - Apr 2026</span>
+                        </div>
+                        <ul className="cv-bullet-list">
+                          <li>Developed web applications and management-system features using PHP, Laravel, and SQL databases.</li>
+                          <li>Built backend functionality and database structures while supporting troubleshooting and performance improvements.</li>
+                          <li>Collaborated with team members to implement features and maintain smooth system operation.</li>
+                        </ul>
+                      </div>
+                    </section>
+
+                    <section className="cv-section">
+                      <h2 className="cv-section-title">SELECTED PROJECTS</h2>
+                      
+                      <div className="cv-project-item">
+                        <h3 className="cv-project-heading">
+                          <strong>Portfolio Website</strong> | Official Portfolio | Next.js | <a href="https://jawadhakimi.com" target="_blank" rel="noreferrer">jawadhakimi.com</a>
+                        </h3>
+                        <p className="cv-project-desc">
+                          Official developer portfolio presenting additional projects, technical skills, services, live demonstrations, and detailed information about my web-development experience.
+                        </p>
+                      </div>
+
+                      <div className="cv-project-item">
+                        <h3 className="cv-project-heading">
+                          <strong>Abdal Azami Official Website</strong> | WordPress | PHP | Responsive Design | <a href="https://abdashoes.com" target="_blank" rel="noreferrer">abdashoes.com</a>
+                        </h3>
+                        <p className="cv-project-desc">
+                          Maintained and optimized a customer-facing retail website through theme customization, product and content management, troubleshooting, responsive improvements, and regular operational updates.
+                        </p>
+                      </div>
+
+                      <div className="cv-project-item">
+                        <h3 className="cv-project-heading">
+                          <strong>EdvoraTech</strong> | Education Platform | Responsive Web | <a href="https://edvoratech.com" target="_blank" rel="noreferrer">edvoratech.com</a>
+                        </h3>
+                        <p className="cv-project-desc">
+                          Built a responsive educational platform featuring course discovery, teacher and student accounts, events, learning roadmaps, progress-focused content, and community resources.
+                        </p>
+                      </div>
+
+                      <div className="cv-project-item">
+                        <h3 className="cv-project-heading">
+                          <strong>ACA US Procurement Website</strong> | Next.js | Vercel | <a href="https://acaglobalreach.com/" target="_blank" rel="noreferrer">acaglobalreach.com</a>
+                        </h3>
+                        <p className="cv-project-desc">
+                          Built a responsive corporate procurement website with reusable React components, mobile navigation, service and past-performance pages, and deployment through GitHub and Vercel.
+                        </p>
+                      </div>
+
+                      <div className="cv-project-item">
+                        <h3 className="cv-project-heading">
+                          <strong>Alone Hijab Web Interface</strong> | Next.js | React | Responsive UI | <a href="https://alone-hijab-scon.vercel.app/" target="_blank" rel="noreferrer">alone-hijab-scon.vercel.app</a>
+                        </h3>
+                        <p className="cv-project-desc">
+                          Developed responsive storefront pages, navigation, hero sections, category-focused layouts, and reusable components for a modern fashion and e-commerce website concept.
+                        </p>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+
+                {/* Footer Bar */}
+                <footer className="cv-footer">
+                  MORE PROJECTS & CODE | <a href="https://jawadhakimi.com">jawadhakimi.com</a> | <a href="mailto:info@jawadhakimi.com">info@jawadhakimi.com</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
