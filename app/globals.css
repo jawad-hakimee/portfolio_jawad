@@ -593,7 +593,7 @@ body::after {
 
 /* Footer */
 .footer {
-  padding: 3.5rem 0;
+  padding: 3.5rem 0 7.5rem 0;
   text-align: center;
   color: var(--text-secondary);
   font-size: 0.95rem;
@@ -765,8 +765,9 @@ body::after {
   }
 
   .top-logo-container {
-    top: 0.85rem;
-    left: 0.85rem;
+    position: absolute;
+    top: 1.25rem;
+    left: 1rem;
     padding: 0.3rem 0.75rem;
   }
   
@@ -826,8 +827,16 @@ body::after {
   }
   
   .section-padding {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  #contact {
+    padding-bottom: 5rem !important;
+  }
+
+  .footer {
+    padding: 2rem 0 8.5rem 0 !important;
   }
 
   .skills-container {
