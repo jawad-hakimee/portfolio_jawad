@@ -4,7 +4,7 @@ export const metadata = {
   openGraph: {
     title: 'Jawad Hakimi | Curriculum Vitae (CV)',
     description: 'Explore Jawad Hakimi\'s experience, skills, and background in Full-Stack web development.',
-    url: 'https://jawadhakimi.com/cv',
+    url: 'https://portfolio-dvmb.vercel.app/cv',
   }
 };
 

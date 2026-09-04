@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://jawadhakimi.com/sitemap.xml',
+    sitemap: 'https://portfolio-dvmb.vercel.app/sitemap.xml',
   }
 }

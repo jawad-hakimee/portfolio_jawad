@@ -8,7 +8,7 @@ export default function Contact() {
           Fill out the form below and I'll get back to you as soon as possible.
         </p>
 
-        <form action="https://formsubmit.co/info@jawadhakimi.com" method="POST" className="card">
+        <form action="https://formsubmit.co/jawadhakimee1401@gmail.com" method="POST" className="card">
           {/* Honeypot field to prevent spam */}
           <input type="text" name="_honey" style={{ display: 'none' }} />
           
@@ -39,8 +39,8 @@ export default function Contact() {
 
         <div className="text-center" style={{ marginTop: '3rem' }}>
           <p className="text-muted">Or reach out directly at:</p>
-          <a href="mailto:info@jawadhakimi.com" style={{ color: 'var(--accent-color)', fontWeight: 600, textDecoration: 'none' }}>
-            info@jawadhakimi.com
+          <a href="mailto:jawadhakimee1401@gmail.com" style={{ color: 'var(--accent-color)', fontWeight: 600, textDecoration: 'none' }}>
+            jawadhakimee1401@gmail.com
           </a>
         </div>
       </div>

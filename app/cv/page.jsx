@@ -53,10 +53,10 @@ export default function CVPage() {
                 <span className="separator">•</span>
                 <a href="tel:+93770127606">+93 770 127 606</a>
                 <span className="separator">•</span>
-                <a href="mailto:info@jawadhakimi.com">info@jawadhakimi.com</a>
+                <a href="mailto:jawadhakimee1401@gmail.com">jawadhakimee1401@gmail.com</a>
               </div>
               <div className="cv-links-row">
-                <a href="https://jawadhakimi.com" target="_blank" rel="noreferrer">jawadhakimi.com</a>
+                <a href="https://portfolio-dvmb.vercel.app" target="_blank" rel="noreferrer">portfolio-dvmb.vercel.app</a>
                 <span className="separator">•</span>
                 <a href="https://github.com/jawad-hakimee" target="_blank" rel="noreferrer">github.com/jawad-hakimee</a>
               </div>
@@ -208,7 +208,7 @@ export default function CVPage() {
                 
                 <div className="cv-project-item">
                   <h3 className="cv-project-heading">
-                    <strong>Portfolio Website</strong> | Official Portfolio | Next.js | <a href="https://jawadhakimi.com" target="_blank" rel="noreferrer">jawadhakimi.com</a>
+                    <strong>Portfolio Website</strong> | Official Portfolio | Next.js | <a href="https://portfolio-dvmb.vercel.app" target="_blank" rel="noreferrer">portfolio-dvmb.vercel.app</a>
                   </h3>
                   <p className="cv-project-desc">
                     Official developer portfolio presenting additional projects, technical skills, services, live demonstrations, and detailed information about my web-development experience.
@@ -258,7 +258,7 @@ export default function CVPage() {
 
           {/* Footer Bar */}
           <footer className="cv-footer">
-            MORE PROJECTS & CODE | <a href="https://jawadhakimi.com">jawadhakimi.com</a> | <a href="mailto:info@jawadhakimi.com">info@jawadhakimi.com</a>
+            MORE PROJECTS & CODE | <a href="https://portfolio-dvmb.vercel.app">portfolio-dvmb.vercel.app</a> | <a href="mailto:jawadhakimee1401@gmail.com">jawadhakimee1401@gmail.com</a>
           </footer>
 
         </div>

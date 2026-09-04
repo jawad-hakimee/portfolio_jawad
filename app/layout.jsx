@@ -2,7 +2,7 @@ import './globals.css'
 import Navbar from '../components/Navbar'
 
 export const metadata = {
-  metadataBase: new URL('https://jawadhakimi.com'),
+  metadataBase: new URL('https://portfolio-dvmb.vercel.app'),
   title: {
     default: 'Jawad Hakimi | Full-Stack & WordPress Developer',
     template: '%s | Jawad Hakimi'
@@ -22,7 +22,7 @@ export const metadata = {
     'MERN Stack Developer',
     'Freelance Web Developer'
   ],
-  authors: [{ name: 'Jawad Hakimi', url: 'https://jawadhakimi.com' }],
+  authors: [{ name: 'Jawad Hakimi', url: 'https://portfolio-dvmb.vercel.app' }],
   creator: 'Jawad Hakimi',
   publisher: 'Jawad Hakimi',
   robots: {
@@ -37,12 +37,12 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: 'https://jawadhakimi.com'
+    canonical: 'https://portfolio-dvmb.vercel.app'
   },
   openGraph: {
     title: 'Jawad Hakimi | Full-Stack & WordPress Developer',
     description: 'Explore web applications, management systems, and high-performance digital experiences crafted by Jawad Hakimi.',
-    url: 'https://jawadhakimi.com',
+    url: 'https://portfolio-dvmb.vercel.app',
     siteName: 'Jawad Hakimi Portfolio',
     images: [
       {
@@ -70,11 +70,11 @@ export default function RootLayout({ children }) {
     '@graph': [
       {
         '@type': 'Person',
-        '@id': 'https://jawadhakimi.com/#person',
+        '@id': 'https://portfolio-dvmb.vercel.app/#person',
         name: 'Jawad Hakimi',
-        url: 'https://jawadhakimi.com',
+        url: 'https://portfolio-dvmb.vercel.app',
         jobTitle: 'Full-Stack Developer & WordPress Specialist',
-        email: 'info@jawadhakimi.com',
+        email: 'jawadhakimee1401@gmail.com',
         sameAs: [
           'https://github.com/jawad-hakimee',
           'https://wa.me/93770127606'
@@ -86,10 +86,10 @@ export default function RootLayout({ children }) {
       },
       {
         '@type': 'WebSite',
-        '@id': 'https://jawadhakimi.com/#website',
-        url: 'https://jawadhakimi.com',
+        '@id': 'https://portfolio-dvmb.vercel.app/#website',
+        url: 'https://portfolio-dvmb.vercel.app',
         name: 'Jawad Hakimi Portfolio',
-        publisher: { '@id': 'https://jawadhakimi.com/#person' }
+        publisher: { '@id': 'https://portfolio-dvmb.vercel.app/#person' }
       }
     ]
   }

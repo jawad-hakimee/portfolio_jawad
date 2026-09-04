@@ -11,18 +11,16 @@ export default function Home() {
     setFormStatus('submitting');
     
     const formData = new FormData(e.target);
-    // Add Web3Forms access key
-    formData.append("access_key", "cfdde8f0-0691-4ab1-8706-48973c6704f4");
     const data = Object.fromEntries(formData.entries());
     
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://formsubmit.co/ajax/jawadhakimee1401@gmail.com", {
         method: "POST",
-        body: JSON.stringify(data),
         headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        }
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
       });
       
       if (response.ok) {
@@ -378,12 +376,12 @@ export default function Home() {
               <div>
                 <h4 style={{ fontWeight: 700, fontSize: '1.15rem', marginBottom: '0.35rem', color: 'var(--text-primary)', fontFamily: "'Space Grotesk', sans-serif" }}>Email</h4>
                 <a 
-                  href="mailto:info@jawadhakimi.com" 
+                  href="mailto:jawadhakimee1401@gmail.com" 
                   style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s', fontWeight: 500 }}
                   onMouseOver={(e) => e.currentTarget.style.color = 'var(--accent-1)'}
                   onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
                 >
-                  info@jawadhakimi.com
+                  jawadhakimee1401@gmail.com
                 </a>
               </div>
 
@@ -520,10 +518,10 @@ export default function Home() {
                       <span className="separator">•</span>
                       <a href="tel:+93770127606">+93 770 127 606</a>
                       <span className="separator">•</span>
-                      <a href="mailto:info@jawadhakimi.com">info@jawadhakimi.com</a>
+                      <a href="mailto:jawadhakimee1401@gmail.com">jawadhakimee1401@gmail.com</a>
                     </div>
                     <div className="cv-links-row">
-                      <a href="https://jawadhakimi.com" target="_blank" rel="noreferrer">jawadhakimi.com</a>
+                      <a href="https://portfolio-dvmb.vercel.app" target="_blank" rel="noreferrer">portfolio-dvmb.vercel.app</a>
                       <span className="separator">•</span>
                       <a href="https://github.com/jawad-hakimee" target="_blank" rel="noreferrer">github.com/jawad-hakimee</a>
                     </div>
@@ -665,7 +663,7 @@ export default function Home() {
                       
                       <div className="cv-project-item">
                         <h3 className="cv-project-heading">
-                          <strong>Portfolio Website</strong> | Official Portfolio | Next.js | <a href="https://jawadhakimi.com" target="_blank" rel="noreferrer">jawadhakimi.com</a>
+                          <strong>Portfolio Website</strong> | Official Portfolio | Next.js | <a href="https://portfolio-dvmb.vercel.app" target="_blank" rel="noreferrer">portfolio-dvmb.vercel.app</a>
                         </h3>
                         <p className="cv-project-desc">
                           Official developer portfolio presenting additional projects, technical skills, services, live demonstrations, and detailed information about my web-development experience.
@@ -713,7 +711,7 @@ export default function Home() {
 
                 {/* Footer Bar */}
                 <footer className="cv-footer">
-                  MORE PROJECTS & CODE | <a href="https://jawadhakimi.com">jawadhakimi.com</a> | <a href="mailto:info@jawadhakimi.com">info@jawadhakimi.com</a>
+                  MORE PROJECTS & CODE | <a href="https://portfolio-dvmb.vercel.app">portfolio-dvmb.vercel.app</a> | <a href="mailto:jawadhakimee1401@gmail.com">jawadhakimee1401@gmail.com</a>
                 </footer>
               </div>
             </div>

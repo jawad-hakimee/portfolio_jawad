@@ -1,25 +1,25 @@
 export default function sitemap() {
   return [
     {
-      url: 'https://jawadhakimi.com',
+      url: 'https://portfolio-dvmb.vercel.app',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1.0,
     },
     {
-      url: 'https://jawadhakimi.com/about',
+      url: 'https://portfolio-dvmb.vercel.app/about',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://jawadhakimi.com/projects',
+      url: 'https://portfolio-dvmb.vercel.app/projects',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: 'https://jawadhakimi.com/cv',
+      url: 'https://portfolio-dvmb.vercel.app/cv',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
